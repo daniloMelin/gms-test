@@ -19,5 +19,8 @@
   "homepage": "https://github.com/daniloMelin/gms-test#readme",
   "dependencies": {
     "cypress": "^15.3.0"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^10.0.0"
   }
 }

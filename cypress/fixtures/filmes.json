@@ -1,0 +1,27 @@
+[
+    {
+        "titulo": "The Matrix",
+        "ano": "1999",
+        "descrição": "Um hacker descobre que a realidade, como ele a conhece, é uma simulação de computador e se junta a uma rebelião para libertar a humanidade."
+    },
+    {
+        "titulo": "Inception",
+        "ano": "2010",
+        "descrição": "Um ladrão especializado em extrair informações do subconsciente durante os sonhos é desafiado a fazer o oposto: plantar uma ideia na mente de um alvo."
+    },
+    {
+        "titulo": "Interstellar",
+        "ano": "2014",
+        "descrição": "Em um futuro onde a Terra está se tornando inabitável, um grupo de astronautas viaja por um buraco de minhoca em busca de um novo lar para a humanidade."
+    },
+    {
+        "titulo": "Jurassic Park",
+        "ano": "1993",
+        "descrição": "Um parque temático com dinossauros clonados sofre uma falha de segurança catastrófica, colocando seus poucos visitantes em perigo mortal."
+    },
+    {
+        "titulo": "The Godfather",
+        "ano": "1972",
+        "descrição": "O envelhecido patriarca de uma poderosa dinastia do crime organizado transfere o controle de seu império clandestino para seu relutante filho mais novo."
+    }
+]
