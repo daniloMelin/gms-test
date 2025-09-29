@@ -1,13 +1,16 @@
 {
   "name": "gms-test",
   "version": "1.0.0",
+  "type": "module",
   "description": "Projeto de automação de testes com Cypress desenvolvido para o curso Jornada de QA da EBAC.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "testchrome": "npx cypress run --browser chrome",
     "testedge": "npx cypress run --browser edge",
-    "testfirefox": "npx cypress run --browser firefox"
+    "testfirefox": "npx cypress run --browser firefox",
+    "lint": "eslint cypress/e2e/**/*.js",
+    "lint:fix": "eslint cypress/e2e/**/*.js --fix"
   },
   "repository": {
     "type": "git",
@@ -24,6 +27,9 @@
     "cypress": "^15.3.0"
   },
   "devDependencies": {
-    "@faker-js/faker": "^10.0.0"
+    "@faker-js/faker": "^10.0.0",
+    "eslint": "^9.36.0",
+    "eslint-plugin-cypress": "^5.1.1",
+    "globals": "^16.4.0"
   }
 }
