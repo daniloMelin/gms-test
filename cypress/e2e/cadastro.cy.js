@@ -8,6 +8,10 @@ describe("US-012-Funcionalidade: Cadastro de membros", () => {
     cy.visit("/");
   });
 
+  afterEach(() => {
+    cy.screenshot();
+  });
+
   const email = fakerPT_BR.internet.email();
 
   it("Deve fazer o cadastro de campos obrigatórios", () => {    

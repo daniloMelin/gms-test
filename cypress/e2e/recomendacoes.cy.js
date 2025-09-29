@@ -6,6 +6,10 @@ describe("US-015-Funcionalidade: Recomendações de filmes", () => {
     cy.visit("/");
   });
 
+  afterEach(() => {
+    cy.screenshot();
+  });
+
   it("Deve exibir entre 4 e 5 cards de recomendações do dia", () => {
     cy.get("#recommendations-section").should("be.visible");
     cy.get("#recommendations-section h2").should("have.text", "RECOMENDAÇÕES DO DIA");

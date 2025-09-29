@@ -6,11 +6,23 @@ describe("US-001-Funcionalidade: Busca de filmes", () => {
     cy.visit("/");
   });
 
+  afterEach(() => {
+    cy.screenshot();
+  });
+
   it("Deve buscar um filme na barra de pesquisa", () => {
     cy.get("#search-input").type("The Matrix");
     cy.get("#search-button").click();
 
     cy.get("#results-section").should("be.visible");
+  });
+
+  it("Deve buscar um filme inexistente na barra de pesquisa", () => {
+    // Busca um filme que não está na lista
+    cy.get("#search-input").type("O Senhor dos Anéis");
+    cy.get("#search-button").click();
+
+    cy.get("#results-section > p").should("contain", "Filme não encontrado.");
   });
 
   it("Deve buscar um filme de uma lista", () => {
@@ -31,13 +43,5 @@ describe("US-001-Funcionalidade: Busca de filmes", () => {
 
       cy.get("#results-section").should('contain', filmes.titulo);
     });
-  });
-
-  it("Deve buscar um filme inexistente na barra de pesquisa", () => {
-    // Busca um filme que não está na lista
-    cy.get("#search-input").type("O Senhor dos Anéis");
-    cy.get("#search-button").click();
-
-    cy.get("#results-section > p").should("contain", "Filme não encontrado.");
   });
 });

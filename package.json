@@ -4,7 +4,10 @@
   "description": "Projeto de automação de testes com Cypress desenvolvido para o curso Jornada de QA da EBAC.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "testchrome": "npx cypress run --browser chrome",
+    "testedge": "npx cypress run --browser edge",
+    "testfirefox": "npx cypress run --browser firefox"
   },
   "repository": {
     "type": "git",
