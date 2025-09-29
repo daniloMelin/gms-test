@@ -1,0 +1,25 @@
+name: Verificação de Qualidade de Código
+
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  lint:
+    name: 🧹 Analisa o código com ESLint
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout do código
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Instala as dependências
+        run: npm ci
+
+      - name: Roda o ESLint
+        run: npm run lint

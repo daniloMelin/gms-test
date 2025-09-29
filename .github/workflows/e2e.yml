@@ -1,5 +1,7 @@
 name: End-to-end tests
+
 on: push
+
 jobs:
   cypress-run:
     name: 🧪 Executa Testes Cypress
