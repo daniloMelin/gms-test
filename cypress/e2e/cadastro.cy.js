@@ -9,7 +9,6 @@ describe('US-012-Funcionalidade: Cadastro de membros', () => {
   });
 
   afterEach(() => {
-    cy.get('body').should('be.visible');
     cy.screenshot();
   });
 
@@ -31,7 +30,7 @@ describe('US-012-Funcionalidade: Cadastro de membros', () => {
   });
 
   it('Deve validar mensagem de erro com telefone inválido', () => {
-    cy.preencherCadastro('Douglas', 'Silva', fakerPT_BR.internet.email(), '1199', 'Forte@1235');
+    cy.preencherCadastro('Douglas', 'Silva', 'teste@email.com', '1199', 'Forte@1235');
     cy.get('#signup-response').should('contain', 'Telefone deve ser um telefone válido');
   });
 

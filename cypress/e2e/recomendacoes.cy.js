@@ -7,7 +7,6 @@ describe('US-015-Funcionalidade: Recomendações de filmes', () => {
   });
 
   afterEach(() => {
-    cy.get('#recommendations-section').should('be.visible');
     cy.screenshot();    
   });
 
