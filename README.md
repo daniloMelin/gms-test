@@ -72,30 +72,38 @@ Durante a execução dos testes exploratórios e automatizados, as seguintes fal
 
 1. Clone o repositório:
 
-```bash
-   git clone [https://github.com/daniloMelin/gms-test.git](https://github.com/daniloMelin/gms-test.git)
-   cd gms-test
-```
+   ```bash
+      git clone [https://github.com/daniloMelin/gms-test.git](https://github.com/daniloMelin/gms-test.git)
+      cd gms-test
+   ```
 
 2. Instale as dependências:
 
-```bash
-   npm install
-```
+   ```bash
+      npm install
+   ```
 
 3. Execute os testes:
 
 * **Modo Headless (Terminal):**
   
-```bash
-   npx cypress run
-```
+   ```bash
+      npx cypress run
+   ```
 
 * **Modo Interativo (Navegador):**
 
-```bash
-   npx cypress open
-```
+   ```bash
+      npx cypress open
+   ```
+
+---
+
+## 👨‍🏫 Agradecimentos
+
+Agradeço ao professor [Fábio Araújo](https://www.linkedin.com/in/fabio10) e à [Mariana Silva](https://www.linkedin.com/in/marisil) pelo suporte e feedbacks valiosos, e à [EBAC](https://ebaconline.com.br/) por proporcionar este evento de grande aprendizado! 🙏
+
+---
 
 ## 📄 Licença
 
